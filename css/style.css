@@ -11,8 +11,20 @@ section .container {
 }
 .footer-text {
     padding-right: 40px;
+    margin-right: 0;
 }
 footer {
     margin: 10px 0 0 0;
     border: 1px solid transparent;
+}
+body {
+    background-image: url("../images/honey_pattern.png");
+    background-repeat: repeat;
+    background-size: 72px 63px;
+}
+.nav, .container, footer {
+    background-color: white;
+}
+footer {
+    height: 50px;
 }
