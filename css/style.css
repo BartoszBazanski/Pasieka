@@ -1,13 +1,16 @@
 .nav li {
     text-align: center;
+    text-transform: uppercase;
 }
 section {
     padding-top: 60px;
     height: 920px;
 }
 section .container {
-    border: 1px solid lightgrey;
+    border: 3px solid #ff9000;
+    border-radius: 5px;
     height: 100%;
+    box-shadow: 0 0 20px #888888;
 }
 .footer-text {
     padding-right: 40px;
@@ -15,16 +18,16 @@ section .container {
 }
 footer {
     margin: 10px 0 0 0;
-    border: 1px solid transparent;
+    height: 50px;
+    border-top: 3px solid #ff9000;
 }
 body {
     background-image: url("../images/honey_pattern.png");
     background-repeat: repeat;
     background-size: 72px 63px;
 }
-.nav, .container, footer {
-    background-color: white;
-}
-footer {
-    height: 50px;
+.nav, .container, footer, .navbar-default{
+    background-color: #f7fcab;
+    background-image: none;
+    color: #ff9000;
 }
