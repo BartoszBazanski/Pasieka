@@ -1,9 +1,5 @@
-.nav li {
-    text-align: center;
-    text-transform: uppercase;
-}
 section {
-    padding-top: 60px;
+    padding-top: 70px;
     height: 920px;
 }
 section .container {
@@ -18,16 +14,24 @@ section .container {
 }
 footer {
     margin: 10px 0 0 0;
-    height: 50px;
+    height: 55px;
     border-top: 3px solid #ff9000;
+}
+nav{
+    border-bottom: 3px solid #ff9000;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
 }
 body {
     background-image: url("../images/honey_pattern.png");
     background-repeat: repeat;
     background-size: 72px 63px;
+    font-family: 'Righteous', cursive;
 }
 .nav, .container, footer, .navbar-default{
     background-color: #f7fcab;
     background-image: none;
+    border-color: #ff9000;
     color: #ff9000;
 }

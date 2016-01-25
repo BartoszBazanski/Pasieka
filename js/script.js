@@ -11,5 +11,6 @@ var main = function(){
     scrollTo("#goToHoney", "#honey");
     scrollTo("#goToOffer", "#offer");
     scrollTo("#goToContact", "#contact");
+    scrollTo(".navbar-brand", "#about");
 };
 $(document).ready(main);
