@@ -21,5 +21,14 @@ var main = function(){
     scrollTo(goToOffer, offer);
     scrollTo(goToContact, contact);
     scrollTo(brand, about);
+    //Honey description animation
+    var honeyTabs = $('.honey li');
+    var honeyTexts = $('#honey-description div');
+    honeyTabs.click(function(){
+        $('li.active').removeClass('active');
+        $('div.active').fadeOut('slow').removeClass("active");
+        $(this).delay(1000).fadeIn('slow').addClass('active');
+        honeyTexts.eq($(this).index()).delay(1000).fadeIn('slow').addClass('active');
+    })
 };
 $(document).ready(main);
