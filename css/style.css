@@ -44,7 +44,7 @@ ul.honey{
     width: 30%;
     height: 80%;
 }
-ul.honey li {
+.tabs {
     margin-bottom: 20px;
     cursor: pointer;
     padding: 17px;
@@ -52,12 +52,6 @@ ul.honey li {
     height: 60px;
     border: 1px solid #ff9000;
     border-radius: 5px;
-}
-ul.honey li:not(.active){
-    opacity: 0.5;
-}
-ul.honey li:hover{
-    opacity: 1;
 }
 #honey-description{
     position: relative;
@@ -74,12 +68,18 @@ ul.honey li:hover{
     width: 40%;
     padding: 15px;
 }
-#honey-description div:not(.active){
-    opacity: 0;
+.honey-text{
+    display: none;
 }
 #honey{
     height: 700px;
 }
-.active {
+.tabs {
+    opacity: 0.5;
+}
+.tabs.active{
+    opacity: 1;
+}
+.tabs:hover{
     opacity: 1;
 }
