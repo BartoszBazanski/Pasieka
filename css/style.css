@@ -43,8 +43,6 @@ body {
 ul.honey{
     list-style-type: none;
     float: left;
-    width: 30%;
-    height: 80%;
 }
 .tabs {
     margin-bottom: 20px;
@@ -56,25 +54,18 @@ ul.honey{
     border-radius: 5px;
 }
 #honey-description{
-    position: relative;
     float: right;
-    width: 70%;
 }
 #honey-description div {
-    position: absolute;
     font-size: 18px;
     padding: 15px;
 }
 .image-box {
     float: right;
-    width: 40%;
     padding: 15px;
 }
 .honey-text{
     display: none;
-}
-#honey{
-    height: 700px;
 }
 #offer, #contact{
     height: 920px;
@@ -89,8 +80,21 @@ ul.honey{
     opacity: 1;
 }
 #map{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+.map-container {
     border: 1px solid #ff9000;
     border-radius: 5px;
-    float: right;
-    padding: 5px;
+    position: relative;
+    padding-bottom: 100%;
+    height: 0;
+    overflow: hidden;
+}
+@media (max-width: 450px){
+    section{
+        padding-top: 170px;
+    }
 }
