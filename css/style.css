@@ -94,6 +94,9 @@ ul.honey{
     height: 0;
     overflow: hidden;
 }
+.navbar-text, .navbar-right {
+    margin-right: 0;
+}
 @media (max-width: 990px){
     section{
         padding-top: 170px;
