@@ -1,5 +1,10 @@
 section{
-    padding-top: 70px;
+    padding-top: 75px;
+    position: relative;
+    z-index: 1000;
+}
+section:first-of-type{
+    padding-top: 275px;
 }
 
 section .container {
@@ -20,6 +25,12 @@ footer {
     margin: 10px 0 0 0;
     border-top: 3px solid #ff9000;
 }
+a.navbar-brand {
+  text-align: left;  
+}
+nav .navbar-header{
+    height: 250px;
+}
 .navigation {
     padding-right: 0;
 }
@@ -30,17 +41,17 @@ nav{
     text-transform: uppercase;
 }
 body {
-    background-image: url("../images/honey_pattern.png");
+    background-image: url("../images/honeycomb2.png");
     background-repeat: repeat;
-    background-size: 72px 63px;
-    font-family: 'Righteous', cursive;
-    font-size: 18px;
+    background-size: 108px 95px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
 }
 .nav, .container, footer, .navbar-default{
     background-color: #f7fcab;
     background-image: none;
     border-color: #ff9000;
-    color: #ff9000;
+    color: black;
 }
 ul.honey{
     list-style-type: none;
@@ -69,7 +80,7 @@ ul.honey{
 .honey-text{
     display: none;
 }
-#offer {
+#offer, #contact {
     height: 920px;
 }
 .tabs {
@@ -96,6 +107,16 @@ ul.honey{
 }
 .navbar-text, .navbar-right {
     margin-right: 0;
+}
+.bees {
+    height: 20px;
+    width: 45px;
+    position: absolute;
+    transform: rotate(0deg);
+    z-index: 0;
+}
+.bees img {
+    width: 100%;
 }
 @media (max-width: 990px){
     section{
