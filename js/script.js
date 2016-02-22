@@ -8,22 +8,34 @@ var main = function(){
     var goToContact = $("#goToContact");
     var contact = $("#contact");
     var brand = $(".navbar-brand");
-    var scrollTo = function(clickOn, goTo){
-        clickOn.click(function(event){
-            event.preventDefault();
-            $("html, body").animate({
-                scrollTop: goTo.offset().top
-            }, 1000);
-        });
-    };
-    scrollTo(goToAbout, about);
-    scrollTo(goToHoney, honey);
-    scrollTo(goToOffer, offer);
-    scrollTo(goToContact, contact);
-    scrollTo(brand, about);
+    //Hide sections
+    function hideSections(){
+        $("section").hide();
+    }
+    hideSections();
+    //Show main sections
+    about.show();
+    //Navigation menu
+    $("#about-link").click(function(){
+        hideSections();
+        about.show();
+    })
+    $("#honey-link").click(function(){
+        hideSections();
+        honey.show();
+    })
+    $("#offer-link").click(function(){
+        hideSections();
+        offer.show();
+    })
+    $("#contact-link").click(function(){
+        hideSections();
+        contact.show();
+    })
     //Honey description animation
     var honeyTabs = $('.tabs');
     var honeyTexts = $('.honey-text');
+    honeyTexts.hide();
     honeyTexts.siblings('.active').show();
     var tabsAnimation = function(){
         honeyTexts.siblings('.active').fadeOut(700).removeClass('active');

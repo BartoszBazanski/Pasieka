@@ -1,17 +1,19 @@
+html {
+    position: relative;
+}
 body {
     background-image: url("../images/pattern.png");
     background-repeat: repeat;
     background-size: 108px 95px;
     font-family: 'Economica', cursive;
-    font-size: 14px;
+    font-size: 16px;
 }
 section{
-    padding-top: 75px;
     position: relative;
+    height: 850px;
     z-index: 1000;
-}
-section:first-of-type{
-    padding-top: 275px;
+    margin-bottom: 75px;
+    margin-top: 275px;
 }
 
 section .container {
@@ -19,7 +21,7 @@ section .container {
     border-radius: 5px;
     height: 100%;
     box-shadow: 0 0 20px #888888;
-    padding: 15px;
+    padding: 50px;
 }
 h3{
     margin-bottom: 40px;
@@ -29,6 +31,10 @@ h3{
     margin-right: 0;
 }
 footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     margin: 10px 0 0 0;
     border-top: 3px solid #ff9000;
 }
@@ -81,21 +87,7 @@ ul.honey{
     float: right;
     padding: 15px;
 }
-.honey-text{
-    display: none;
-}
-#offer, #contact {
-    height: 920px;
-}
-.tabs {
-    opacity: 0.5;
-}
-.tabs.active{
-    opacity: 1;
-}
-.tabs:hover{
-    opacity: 1;
-}
+
 #map{
     position: absolute;
     width: 100%;
@@ -117,7 +109,7 @@ ul.honey{
     width: 45px;
     position: absolute;
     transform: rotate(0deg);
-    z-index: 0;
+    z-index: 1500;
 }
 .bees img {
     width: 100%;
@@ -141,6 +133,8 @@ ul.honey{
 }
 .cell:hover {
     cursor: pointer;
+    font-weight: bold;
+    color: #ff9000;
 }
 #apiary-link {
     top: 10px;
