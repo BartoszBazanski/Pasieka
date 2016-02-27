@@ -1,0 +1,197 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  height: 100vh; }
+
+body {
+  position: relative;
+  min-height: 100%;
+  background-image: url("../images/pattern.png");
+  background-repeat: repeat;
+  background-size: 108px 95px;
+  font-family: 'Economica', cursive;
+  font-size: 16px; }
+
+section {
+  min-height: 68vh; }
+  section .container {
+    border: 3px solid #ff9000;
+    border-radius: 5px;
+    min-height: 68vh;
+    box-shadow: 0 0 20px #888888;
+    padding: 50px; }
+
+h3 {
+  margin-bottom: 40px; }
+
+.footer-text {
+  padding-right: 40px;
+  margin-right: 0; }
+
+footer {
+  margin: 20px 0 0 0;
+  border-top: 3px solid #ff9000; }
+
+h1 {
+  font-family: 'Comfortaa', cursive;
+  margin: 30px 0;
+  font-size: 30px;
+  line-height: 50px; }
+
+a.navbar-brand {
+  text-align: left; }
+
+nav .navbar-header {
+  height: 225px; }
+
+.navigation {
+  padding-right: 0; }
+
+nav {
+  border-bottom: 3px solid #ff9000;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase; }
+
+.nav, .container, footer, .navbar-default {
+  background-color: #f7fcab;
+  background-image: none;
+  border-color: #ff9000;
+  color: black; }
+
+ul.honey {
+  list-style-type: none;
+  float: left; }
+
+.tabs {
+  margin-bottom: 20px;
+  cursor: pointer;
+  padding: 22px;
+  font-size: 14px;
+  height: 60px;
+  border: 1px solid #ff9000;
+  border-radius: 5px; }
+
+#honey-description {
+  float: right; }
+  #honey-description div {
+    padding: 15px; }
+
+.image-box {
+  float: right;
+  padding: 15px; }
+
+#map {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.map-container {
+  border: 5px solid #ff9000;
+  border-radius: 5px;
+  position: relative;
+  padding-bottom: 100%;
+  height: 0;
+  overflow: hidden; }
+
+.navbar-text, .navbar-right {
+  margin-right: 0; }
+
+.bees {
+  height: 20px;
+  width: 45px;
+  position: absolute;
+  transform: rotate(0deg);
+  z-index: 1500; }
+  .bees img {
+    width: 100%; }
+
+#cell-menu {
+  position: relative;
+  width: 260px;
+  height: 225px;
+  margin: 0 auto;
+  padding: 10px; }
+
+.cell {
+  height: 80px;
+  width: 80px;
+  padding: 32px 0;
+  text-align: center;
+  position: absolute;
+  background-image: url("../images/menucell.png");
+  background-size: 80px 80px;
+  background-repeat: no-repeat; }
+  .cell:hover {
+    cursor: pointer;
+    font-weight: bold;
+    color: #ff9000;
+    background-image: url("../images/menu_cell_hover.png");
+    background-size: 80px 80px;
+    background-repeat: no-repeat; }
+
+#apiary-link {
+  top: 10px;
+  left: 10px; }
+
+#honey-link {
+  top: 72px;
+  left: 50px; }
+
+#offer-link {
+  top: 72px;
+  left: 131px; }
+
+#contact-link {
+  top: 133px;
+  left: 91px; }
+
+#about-link {
+  top: 133px;
+  left: 10px; }
+
+#kitchen-link {
+  top: 10px;
+  left: 171px;
+  padding: 25px 10px; }
+
+@media (max-width: 990px) {
+  section {
+    padding-top: 170px; } }
+
+/*# sourceMappingURL=main.css.map */
